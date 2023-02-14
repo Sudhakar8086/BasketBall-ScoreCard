@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="homescoring">
+            <div>
+                <h1 id="homeheading">HOME</h1>
+            </div>
+            <div>
+                <h1 id="home-score">0</h1>
+            </div>
+            <div class="homePoints">
+                <button id="add1Points" onclick="home1Points()">+1</button>
+                <button id="add2Points" onclick="home2Points()">+2</button>
+                <button id="add3Points" onclick="home3Points()">+3</button>
+            </div>
+        </div>
+        <div class="entries">
+            <button id="new" onclick="newGame()">NEW POINTS</button>
+            <button id="save" onclick="saveGame()">SAVE GAME</button>
+            <p id="prevGame">HOME SCORE :</p>
+            <p id="scoreboard">GUEST SCORE :</p>
+        </div>
+        <div class="guestscoring">
+            <div>
+                <h1 id="guestheading"> GUEST </h1>
+            </div>
+            <div>
+                <h1 id="guest-score">0</h1>
+            </div>
+            <div class="guestPoints">
+                <button id="add1" onclick="guest1Points()">+1</button>
+                <button id="add2" onclick="guest2Points()">+2</button>
+                <button id="add3" onclick="guest3Points()">+3</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
